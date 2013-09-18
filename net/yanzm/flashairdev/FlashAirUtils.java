@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.example.flashairdev;
+package net.yanzm.flashairdev;
 
 import java.io.IOException;
 import java.util.ArrayList;
