@@ -42,7 +42,11 @@ public class FlashAirFileInfo {
     mSize = info.substring(start + 1, end);
 
     end = start;
-    start = info.indexOf(",", dir.length());
+    int dirLength = dir.length();
+    if (dir.equals("/")) {
+        dirLength = 0;
+    }
+    start = info.indexOf(",", dirLength);
     mFileName = info.substring(start + 1, end);
 
     mDir = dir;
