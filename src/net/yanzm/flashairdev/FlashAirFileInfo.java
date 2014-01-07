@@ -52,7 +52,7 @@ public class FlashAirFileInfo {
     mDir = dir;
 
     int year = ((date >> 9) & 0x0000007f) + 1980;
-    int month = (date >> 5) & 0x0000000f - 1;
+    int month = ((date >> 5) & 0x0000000f) - 1;
     int day = (date) & 0x0000001f;
 
     int hourOfDay = (time >> 11) & 0x0000001f;
